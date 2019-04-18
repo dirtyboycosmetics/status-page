@@ -5,3 +5,31 @@ a{
 a:hover{
     color:#0371AB
 }
+
+.fa-instagram {
+    color: transparent;
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background: -webkit-radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+.fa-instagram:hover{
+    color:#0371AB;
+}
+
+.fa-facebook-f{
+    color:#3b5998;
+}
+
+.fa-facebook-f:hover{
+    color:#0371AB;
+}
+
+.fa-twitter{
+    color:#1DA1F2;
+}
+
+.fa-twitter:hover{
+    color:#0371AB;
+}
