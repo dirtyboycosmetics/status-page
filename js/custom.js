@@ -1,4 +1,4 @@
-// var w = window.matchMedia("(max-width: 992px)");
+var w = window.matchMedia("(max-width: 992px)");
 var vid = document.getElementById("dirtyboyvideo");
 var source = document.getElementById("dirtyboyvideosource");
 
@@ -16,27 +16,27 @@ $(document).ready(function() {
         vid.play();
     }, 1000);
 });
-// window.addEventListener("resize", function screenres(){
-//   if (w.matches) {
-//     vid.pause();
-//     source.removeAttribute("src");
-//     source.src = "video/dirtyboy-mobile.mp4";
-//     // vid.load();
-//     const playPromise = vid.play();
-//     if (playPromise !== null){
-//         playPromise.catch(() => { media.play(); })
-//     }
-//   } else {
-//     vid.pause();
-//     source.removeAttribute("src");
-//     source.src = "video/dirtyboy.mp4";
-//     // vid.load();
-//     const playPromise = vid.play();
-//     if (playPromise !== null){
-//         playPromise.catch(() => { media.play(); })
-//     }
-//   };
-// });
+window.addEventListener("resize", function screenres() {
+    if (w.matches) {
+        vid.pause();
+        source.removeAttribute("src");
+        source.src = "video/dirtyboy-mobile.mp4";
+        // vid.load();
+        const playPromise = vid.play();
+        if (playPromise !== null) {
+            playPromise.catch(() => { vid.play(); })
+        }
+    } else {
+        vid.pause();
+        source.removeAttribute("src");
+        source.src = "video/dirtyboy.mp4";
+        // vid.load();
+        const playPromise = vid.play();
+        if (playPromise !== null) {
+            playPromise.catch(() => { vid.play(); })
+        }
+    };
+});
 
 // $(document).ready(function() {
 
