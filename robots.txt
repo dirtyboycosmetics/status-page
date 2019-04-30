@@ -7,4 +7,4 @@ Disallow: /_myacct
 Disallow: /do/
 Disallow: /*?*rf=
 
-Sitemap: http://www.dirtyboycosmetics.com/sitemap.xml
+Sitemap: http://www.dirtyboycosmetics.com.au/sitemap.xml
