@@ -1,0 +1,10 @@
+User-agent: *
+#Disallow: /
+Disallow: /_cpanel
+Disallow: /cgi-bin/suppliers/
+Disallow: /_mycart
+Disallow: /_myacct
+Disallow: /do/
+Disallow: /*?*rf=
+
+Sitemap: http://www.dirtyboycosmetics.com/sitemap.xml
