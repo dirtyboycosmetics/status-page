@@ -4,17 +4,31 @@ var source = document.getElementById("dirtyboyvideosource");
 
 
 $(document).ready(function() {
-    vid.pause();
-    source.removeAttribute("src");
-    source.src = "video/dirtyboy.mp4";
-    // vid.load();
-    const playPromise = vid.play();
-    if (playPromise !== null) {
-        playPromise.catch(() => { vid.play(); })
-    }
-    setTimeout(function() {
-        vid.play();
-    }, 1000);
+    if (w.matches) {
+        vid.pause();
+        source.removeAttribute("src");
+        source.src = "video/dirtyboy-mobile.mp4";
+        // vid.load();
+        const playPromise = vid.play();
+        if (playPromise !== null) {
+            playPromise.catch(() => { vid.play(); })
+        }
+        setTimeout(function() {
+            vid.play();
+        }, 1000);
+    } else {
+        vid.pause();
+        source.removeAttribute("src");
+        source.src = "video/dirtyboy.mp4";
+        // vid.load();
+        const playPromise = vid.play();
+        if (playPromise !== null) {
+            playPromise.catch(() => { vid.play(); })
+        }
+        setTimeout(function() {
+            vid.play();
+        }, 1000);
+    };
 });
 window.addEventListener("resize", function screenres() {
     if (w.matches) {
@@ -26,6 +40,9 @@ window.addEventListener("resize", function screenres() {
         if (playPromise !== null) {
             playPromise.catch(() => { vid.play(); })
         }
+        setTimeout(function() {
+            vid.play();
+        }, 1000);
     } else {
         vid.pause();
         source.removeAttribute("src");
@@ -35,6 +52,9 @@ window.addEventListener("resize", function screenres() {
         if (playPromise !== null) {
             playPromise.catch(() => { vid.play(); })
         }
+        setTimeout(function() {
+            vid.play();
+        }, 1000);
     };
 });
 
