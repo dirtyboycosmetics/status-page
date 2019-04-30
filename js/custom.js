@@ -10,8 +10,11 @@ $(document).ready(function() {
     // vid.load();
     const playPromise = vid.play();
     if (playPromise !== null) {
-        playPromise.catch(() => { media.play(); })
+        playPromise.catch(() => { vid.play(); })
     }
+    setTimeout(function() {
+        vid.play();
+    }, 1000);
 });
 // window.addEventListener("resize", function screenres(){
 //   if (w.matches) {
