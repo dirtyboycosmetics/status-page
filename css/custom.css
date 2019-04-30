@@ -109,3 +109,10 @@ footer {
         transform: translateX(-50%) translateY(-50%);
     }
 }
+
+@media (max-height: 680px) {
+    .site-container .overlay {
+        padding-bottom: 0rem;
+        transform: translateX(-50%) translateY(-20%);
+    }
+}
